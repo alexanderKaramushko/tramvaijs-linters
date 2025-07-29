@@ -1,0 +1,34 @@
+{
+  "name": "@tinkoff/eslint-plugin-query",
+  "version": "1.0.0",
+  "description": "ESLint React Query custom rules of Tinkoff",
+  "license": "Apache-2.0",
+  "files": [
+    "index.js",
+    "./rules/boolean-enabled.js"
+  ],
+  "scripts": {},
+  "author": {
+    "name": "Tinkoff Team",
+    "email": "frontend@tinkoff.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tinkoff/linters.git"
+  },
+  "devDependencies": {
+    "eslint": ">8",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@typescript-eslint/utils": "^6.10.0",
+    "ts-api-utils": "^2.1.0",
+    "@typescript-eslint/rule-tester": "^6.10.0"
+  },
+  "peerDependencies": {
+    "eslint": ">8",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@typescript-eslint/utils": "^6.10.0",
+    "ts-api-utils": "^2.1.0"
+  }
+}

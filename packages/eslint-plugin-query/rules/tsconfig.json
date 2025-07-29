@@ -1,0 +1,14 @@
+{
+  "file": ["./test.ts"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "module": "es6",
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "lib": ["es2015"]
+  }
+}

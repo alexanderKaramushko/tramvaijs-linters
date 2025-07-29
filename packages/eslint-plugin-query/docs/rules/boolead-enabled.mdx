@@ -1,0 +1,36 @@
+---
+description: 'Checks a value of the enabled-flag for query-functions to be explicitly converted to boolean.'
+---
+
+React Query provides an enabled flag for useQuery which can be `true`, `false` or `undefined`.
+It leads to misconception when `undefined` is passed and query is started.
+So it's better use strictly boolean types to pass in enabled.
+
+## Options
+
+The rule will enforce values passed to enabled-flag of useQuery are strictly boolean types (true | false).
+
+<Tabs>
+<TabItem value="❌ Incorrect">
+
+```ts'
+import { useQuery } from '@tanstack/react-query';
+
+useQuery({
+  enabled: undefined
+})
+```
+
+</TabItem>
+<TabItem value="✅ Correct">
+
+```ts'
+import { useQuery } from '@tanstack/react-query';
+
+useQuery({
+  enabled: true
+})
+```
+
+</TabItem>
+</Tabs>

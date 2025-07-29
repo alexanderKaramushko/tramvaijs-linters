@@ -15,3 +15,4 @@ node_modules
 .tmp
 debug-path
 
+packages/eslint-plugin-query/rules/file.ts
